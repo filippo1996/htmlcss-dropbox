@@ -5,9 +5,84 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dropbox Business</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Antonio:wght@600&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
-    
+<body class="debug">
+    <!-- container header -->
+    <div class="container">
+        <!-- intestazione pagina -->
+        <header class="fixed">
+            <div class="row clearfix">
+                <!-- contenuto logo -->
+                <div class="col float-left">
+                    <div id="img-logo">
+                        <a href="#"><span class="arbor-logo"><svg width="128" class="arbor-logo__glyph align-middle" viewBox="0 0 128 128" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g stroke="none" stroke-width="1" fill="#0061ff" fill-rule="evenodd"><g><g transform="translate(6.233766, 14.961039)"><path d="M86.8738072,36.7001288 L115.576935,54.9863896 L86.6717922,73.4013506 L57.7882599,55.0004219 L28.9051429,73.4013506 L0,54.9863896 L28.7027137,36.7003926 L0,18.4145455 L28.9055584,0 L57.7880526,18.4006458 L86.6722078,0 L115.576519,18.4145455 L86.8738072,36.7001288 Z M86.4693601,36.7003926 L57.7880519,18.4284451 L29.1071579,36.7001288 L57.7882599,54.9723573 L86.4693601,36.7003926 Z M29.0909091,79.5037922 L57.9960519,61.0909091 L86.9016104,79.5037922 L57.9960519,97.9187532 L29.0909091,79.5037922 Z"></path></g></g></g></svg><span class="arbor-logo__wordmark"><svg class="arbor-logo__dropbox-wordmark align-middle" width="388" viewBox="0 0 389 128" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g fill="none" fill-rule="evenodd"><path d="m0 0h389v128h-389z" fill-rule="nonzero"></path><g transform="translate(16 28)"><path d="m311.395355 67 19.053-25.70875-17.574-24.29125h15.051l10.179 15.15625 10.266-15.15625h14.964l-17.835 24.20425 18.792 25.79575h-14.79l-11.571-16.31275-11.223 16.31275z" fill="black"></path><path d="m287.992355 68.305c-16.182 0-25.317-8.787-25.317-25.317v-1.392c0-16.878 10.701-25.926 25.317-25.926 14.964 0 25.404 9.222 25.404 25.926v1.392c0 16.53-10.266 25.317-25.404 25.317zm0-11.397c7.569 0 12.18-4.959 12.18-14.094v-1.218c0-9.396-4.698-14.877-12.093-14.877-7.308 0-12.18 5.133-12.18 14.877v1.218c0 9.048 4.611 14.094 12.093 14.094z" fill="black"></path><path d="m235.802773 68.305c-8.265 0-13.659-4.002-16.356-10.44l-1.044 9.135h-11.31v-66.99h12.789v25.752c2.784-6.525 8.352-10.092 16.269-10.092 11.919.087 20.793 8.352 20.793 25.056v1.479c0 16.704-8.352 26.1-21.141 26.1zm-4.176-11.31c7.569 0 12.18-4.872 12.18-14.79v-1.218c0-9.222-5.046-14.268-12.006-14.268-7.221 0-12.18 5.829-12.18 14.442v1.044c0 9.396 4.785 14.79 12.006 14.79z" fill="black"></path><path d="m150.120117 84v-67h10.962l1.305 9.371c2.697-6.438 8.265-10.701 16.53-10.701 12.789 0 21.141 9.222 21.141 26.1v1.392c0 16.53-9.309 25.143-21.141 25.143-8.004 0-13.311-3.567-16.008-9.396v25.091zm24.447-26.918c7.482 0 12.267-4.959 12.267-14.181v-1.131c0-10.005-5.133-14.964-12.006-14.964-7.308 0-12.18 5.568-12.18 14.877v.957c0 8.874 4.698 14.442 11.919 14.442z" fill="black"></path><path d="m117.994355 68.305c-16.182 0-25.4039995-8.787-25.4039995-25.317v-1.392c0-16.878 10.7879995-25.926 25.4039995-25.926 14.964 0 25.317 9.222 25.317 25.926v1.392c0 16.53-10.179 25.317-25.317 25.317zm-.087-11.397c7.482 0 12.18-4.959 12.18-14.094v-1.218c0-9.396-4.698-14.877-12.093-14.877-7.308 0-12.18 5.133-12.18 14.877v1.218c0 9.048 4.611 14.094 12.093 14.094z" fill="black"></path><path d="m57.9643555 67h13.05v-22.968c0-10.614 2.61-14.355 13.398-14.355h5.394v-13.311h-3.219c-9.309 0-14.442 4.089-16.443 12.093l-1.653-11.459h-10.527z" fill="black"></path><path d="m0 67v-61.98266602h23.4253555c15.138 0 27.492 8.73866602 27.492 28.66166602v4.263c0 20.01-11.658 29.058-27.144 29.058zm22.7293555-50.808h-9.7293555v39.411h10.1643555c8.526 0 14.355-5.655 14.355-18.096v-3.219c0-12.441-6.003-18.096-14.79-18.096z" fill="black"></path></g></g></svg></span></a>
+                    </div>
+                </div>
+                <!-- fine contenuto logo -->
+                <div class="col-7 float-left">
+                    <nav class="clearfix">
+                        <!-- nav a sinistra -->
+                        <div class="nav-left float-left">
+                            <ul class="nav">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Perché Dropbox?</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Funzioni</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Piani e prezzi</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- fine nav a sinistra -->
+
+                        <!-- nav a destra -->
+                        <div class="nav-right float-right">
+                            <ul class="nav">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Supporto</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Contatta l'ufficio vendite</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- fine nav a destra -->
+                    </nav>
+                </div>
+                <!-- pulsanti di accesso -->
+                <div class="col float-left">
+                    <div class="btn-group">
+                        <a class="btn-link" href="">Accedi</a>
+                        <a class="btn btn-primary btn-sm" href="">Inizia</a>
+                    </div>
+                </div>
+                <!-- fine pulsanti di accesso -->
+            </div>
+        </header>
+        <!-- fine intestazione pagina -->
+    </div>
+    <!-- fine container header -->
+
+    <!-- container jumbotron -->
+    <div class="container">
+        <!-- sezione jumbotron -->
+        <section class="jumbotron">
+            <div class="row">
+                <div class="content-title">
+                    <h1 class="title-jumb">Tutto ciò che ti serve per il lavoro, in un unico posto</h1>
+                </div>
+                <div class="lead">
+                    <p>Finalmente tutti i tuoi strumenti, contenuti e collaboratori sono accessibili dallo stesso posto. Dropbox Business è più di uno spazio di archiviazione sicuro: è un modo intelligente e integrato per ottimizzare il flusso di lavoro esistente.</p>
+                </div>
+            </div>
+        </section>
+        <!-- fine sezione jumbotron -->
+    </div>
+    <!-- fine container jumbotron -->
 </body>
 </html>
