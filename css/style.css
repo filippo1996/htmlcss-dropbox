@@ -5,6 +5,9 @@
     box-sizing: border-box;
 }
 
+body{
+    font-family: SharpGrotesk,Open Sans,sans-serif;
+}
 
 /* common */
 /* riga */
@@ -74,6 +77,10 @@
     font-size: 14px;
 }
 
+.btn-xl{
+    padding: 15px 20px;
+}
+
 
 /* float */
 .float-left{
@@ -95,7 +102,7 @@
 /* clearfix */
 .clearfix::after{
     content: '';
-    display: inline-block;
+    display: table;
     clear: both;
 }
 
@@ -109,14 +116,27 @@
     color: black;
 }
 
+/* icone */
+.ico{
+    display: block;
+}
+
+/* freccia in giù */
+.arrow-down{
+    background-image: url(../img/icons/arrow-down.svg);
+    background-size: cover;
+    width: 27px;
+    height: 40px;
+}
 
 
 /* header */
 header{
     height: 80px;
-    font-family: SharpGrotesk,Open Sans,sans-serif;
     font-size: 16px;
     background-color: #fff;
+    z-index: 10;
+    border-bottom: 1px solid lightgray;
 }
 
 header .row > .col{
@@ -163,12 +183,16 @@ section.jumbotron{
     padding-top: 130px;
 }
 
+section.jumbotron .row{
+    max-width: 1440px;
+}
+
 section.jumbotron .content-title{
     margin: 0 60px 30px;
 }
 
 section.jumbotron .title-jumb{
-    font-size: 95px;
+    font-size: 73px;
     line-height: 108px;
     font-family: 'Antonio', sans-serif;
     font-weight: 600;
@@ -176,7 +200,44 @@ section.jumbotron .title-jumb{
 
 section.jumbotron .lead{
     width: 25%;
-    margin: 0 0 75px 60px;
+    margin-left: 60px;
+    padding-bottom: 95px;
+}
+
+section.jumbotron .lead p{
+    max-width: 100%;
+    margin-bottom: 30px;
+    font-size: 19px;
+    line-height: 26px;
+}
+
+section.jumbotron .lead .arbor-element{
+    margin-top: 10px;
+}
+
+section.jumbotron .lead .arbor-copy{
+    font-size: 14px;
+    line-height: 21px;
+}
+
+section.jumbotron .lead .arrow-down{
+    font-size: 40px;
+    color: black;
+    display: block;
+    margin-top: 50px;
+}
+
+section.jumbotron .img-jumb{
+    width: 67%;
+    position: relative;
+    margin-left: 2%;
+}
+
+section.jumbotron .img-jumb img{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 
 
@@ -212,12 +273,7 @@ section.jumbotron .lead{
     height: 100%;
 }
 
-.debug section.jumbotron{
-    height: 691px;
-}
-
 .debug section.jumbotron .row{
-    height: 500px;
     background-color: khaki;
 }
 
@@ -227,5 +283,12 @@ section.jumbotron .lead{
 
 .debug section.jumbotron .lead{
     background-color: grey;
-    height: 200px;
+}
+
+.debug .img-jumb{
+    background-color: pink;
+}
+
+.debug section.jumbotron .items{
+    background-color: mediumseagreen;
 }
