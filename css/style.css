@@ -6,7 +6,17 @@
 }
 
 body{
-    font-family: SharpGrotesk,Open Sans,sans-serif;
+    font-family: 'Roboto', sans-serif;
+}
+
+.container{
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.container-section{
+    width: 75%;
+    margin: 0 auto;
 }
 
 /* common */
@@ -129,6 +139,54 @@ body{
     height: 40px;
 }
 
+/* headings */
+.title-h2{
+    font-size: 49px;
+    line-height: 46px;
+    font-weight: 500;
+    margin-bottom: 50px;
+}
+
+
+/* fake radios */
+.fake-radio{
+    width: 26px;
+    height: 26px;
+    border: 1px solid #b8b8b8;
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 7px;
+    vertical-align: middle;
+}
+
+.radio-active{
+    border: 7px solid #0061ff;
+}
+
+
+/* griglie prezzi a tre colonne e una riga */
+.grid-contain{
+    width: 100%;
+    margin: 50px 0;
+}
+
+.grid-contain .col-3{
+    width: calc((100% / 3) - (120px / 3));
+    border: 1px solid #d0d0d3;
+    height: 300px;
+}
+
+.grid-contain .col-3:nth-of-type(2){
+    margin: 0 60px;
+}
+
+.row-grid-price .col{
+    width: 100%;
+    margin-top: 60px;
+    border: 1px solid #d0d0d3;
+    height: 300px;
+}
+
 
 /* header */
 header{
@@ -241,6 +299,23 @@ section.jumbotron .img-jumb img{
 }
 
 
+/* main */
+main{
+    max-width: 1440px;
+    width: 100%;
+}
+
+#price-plan{
+    width: 100%;
+    padding-top: 190px;
+}
+
+#price-plan .radio-content .item{
+    display: inline-block;
+    margin-right: 20px;
+}
+
+
 
 /* debug */
 .debug header {
@@ -291,4 +366,35 @@ section.jumbotron .img-jumb img{
 
 .debug section.jumbotron .items{
     background-color: mediumseagreen;
+}
+
+.debug main{
+    height: 1200px;
+    background-color: darkslategray;
+}
+
+.debug #price-plan{
+    background-color: palegreen;
+}
+
+.debug #price-plan .row{
+    background-color: red;
+}
+
+.debug .grid-contain{
+    background-color: coral;
+}
+
+.debug .grid-contain .col-3{
+    height: 400px;
+    background-color: darkgreen;
+}
+
+.debug .col{
+    height: 200px;
+    background-color: darkgreen;
+}
+
+.debug .row-grid-price{
+    background-color:lightblue;
 }
