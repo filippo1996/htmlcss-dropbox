@@ -92,6 +92,16 @@ body{
     font-size: 14px;
 }
 
+.btn-medium{
+    padding: 10px 17px;
+    color: black;
+    border: 1px solid black;
+}
+
+.btn-medium:hover{
+    background-color: #f5f5f5;
+}
+
 .btn-xl{
     padding: 15px 20px;
 }
@@ -167,6 +177,12 @@ body{
     line-height: 46px;
     font-weight: 500;
     margin-bottom: 50px;
+}
+
+.title-h4{
+    font-size: 30px;
+    line-height: 32px;
+    font-weight: 500;
 }
 
 /* font-size in px */
@@ -322,7 +338,7 @@ header .row > .col{
 }
 
 #img-logo{
-    line-height: 80px;
+    line-height: 78px;
     margin-left: 20px;
 }
 
@@ -336,21 +352,25 @@ header .row > .col{
     height: 32px;
 }
 
+header ul.nav li:hover,
+header .col .btn-link:hover{
+    border-bottom: 2px solid black;
+}
+
 header ul.nav {
-    line-height: 80px;
+    line-height: 78px;
 }
 
 header .nav-item{
-    padding: 0 20px;
+    margin: 0 20px;
 }
 
 header .btn-group{
-    line-height: 80px;
+    line-height: 78px;
 }
 
 header .btn-group .btn-link{
-    margin: 0 20px;
-    padding-right: 20px;
+    margin: 0 40px 0 20px;
 }
 
 /* jumbotron */
@@ -434,6 +454,19 @@ main{
     margin-right: 20px;
 }
 
+#find-partner{
+    margin: 120px 0;
+}
+
+#find-partner .content-text{
+    width: calc(100% - 586px);
+    padding: 100px 40px 100px 80px;
+}
+
+#find-partner .content-text p{
+    line-height: 26px;
+    margin: 20px 0 30px;
+}
 
 
 /* debug */
@@ -488,7 +521,6 @@ main{
 }
 
 .debug main{
-    height: 1400px;
     background-color: darkslategray;
 }
 
@@ -518,4 +550,16 @@ main{
 
 .debug .row-grid-price .grid-contain .content{
     background-color:yellow;
+}
+
+.debug #find-partner .row{
+    background-color: crimson;
+}
+
+.debug #find-partner .content-img{
+    background-color: green;
+}
+
+.debug #find-partner .content-text{
+    background-color: blue;
 }
