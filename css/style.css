@@ -190,6 +190,11 @@ body{
     font-size: 16px;
 }
 
+.copy{
+    line-height: 26px;
+    font-size: 16px;
+}
+
 /* vertical align */
 .vertical-align-top{
     vertical-align: top;
@@ -468,6 +473,22 @@ main{
     margin: 20px 0 30px;
 }
 
+#operations .content{
+    margin-bottom: 100px;
+}
+
+#operations .content .col-3:nth-of-type(2){
+    margin: 0 5%;
+}
+
+#operations .content img{
+    width: 100%;
+}
+
+#operations .content .content-text .title-h4{
+    margin: 30px 0 20px;
+}
+
 
 /* debug */
 .debug header {
@@ -562,4 +583,12 @@ main{
 
 .debug #find-partner .content-text{
     background-color: blue;
+}
+
+.debug #operations .row{
+    background-color:yellow;
+}
+
+.debug #operations .row .content{
+    background-color:red;
 }
