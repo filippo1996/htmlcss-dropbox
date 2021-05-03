@@ -81,6 +81,11 @@ body{
     background-color: #0061ff;
 }
 
+.btn-secondary{
+    background-color: white;
+    color: black;
+}
+
 .btn-primary:hover{
     background-color: #3b85ff;
 }
@@ -98,7 +103,8 @@ body{
     border: 1px solid black;
 }
 
-.btn-medium:hover{
+.btn-medium:hover,
+.btn-secondary:hover{
     background-color: #f5f5f5;
 }
 
@@ -153,6 +159,15 @@ body{
     vertical-align: top;
 }
 
+.ico-arrow{
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    border-left: 2px solid black;
+    border-bottom: 2px solid black;
+    transform: rotate(-45deg);
+}
+
 .ico-check{
     display: inline-block;
     width: 13px;
@@ -177,6 +192,11 @@ body{
     line-height: 46px;
     font-weight: 500;
     margin-bottom: 50px;
+}
+
+.title-h3{
+    font-size: 41px;
+    line-height: 38px;
 }
 
 .title-h4{
@@ -485,11 +505,6 @@ section.jumbotron .img-jumb img{
     margin: 30px 0 20px;
 }
 
-#partner-logos{
-    width: 100vw;
-    height: 50vh;
-}
-
 #partner-logos .container-section{
     margin-bottom: 60px;
 }
@@ -497,12 +512,6 @@ section.jumbotron .img-jumb img{
 #partner-logos .title-h2{
     width: 60%;
     margin-bottom: 20px;
-}
-
-#partner-logos .row,
-#partner-logos .content{
-    height: 100%;
-    width: 100%;
 }
 
 #partner-logos .row .col-sx,
@@ -513,17 +522,17 @@ section.jumbotron .img-jumb img{
 
 #partner-logos .row .col-center{
     width: 40%;
-    height: 100%;
+    height: 30vw;
 }
 
 #partner-logos .col{
-    width: 50%;
-    height: 50%;
+    width: 15vw;
+    height: 15vw;
     position: relative;
 }
 
 #partner-logos .logo-partner{
-    width: 150px;
+    width: 70%;
     height: 75px;
     position: absolute;
     top: 50%;
@@ -561,6 +570,10 @@ section.jumbotron .img-jumb img{
     margin: 50px;
 }
 
+#partner-logos .col-center figure img{
+    width: 60%;
+}
+
 #partner-logos .col-center img{
     max-width: 150px;
     margin-bottom: 30px;
@@ -576,6 +589,86 @@ section.jumbotron .img-jumb img{
 #partner-logos .col-center p{
     margin: 35px 0 30px;
 }
+
+#partner-logos .box{
+    background-color: #b4d0e7;
+    width: 100%;
+    padding: 120px 0;
+}
+
+#partner-logos .box .title-h2{
+    color: #61082b;
+    margin-bottom: 0;
+}
+
+#partner-logos .box .container-section{
+    position: relative;
+    margin-bottom: 0;
+}
+
+#partner-logos .box a{
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+#faq{
+    margin: 120px 0;
+}
+
+#faq .title-h3{
+    display: inline-block;
+    margin-bottom: 30px;
+}
+
+#faq ul{
+    border-top: 1px solid black;
+}
+
+#faq li{
+    border-bottom: 1px solid black;
+    padding: 20px 0;
+}
+
+#faq li .question h3{
+    width: 60%;
+    display: inline-block;
+    padding: 10px 0;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+#faq li .question .arrow-position{
+    display: inline-block;
+    width: 35%;
+    text-align: right;
+}
+
+#faq li:hover .question .ico-arrow{
+    transform: rotate(135deg);
+}
+
+
+#faq li .answer{
+    width: 70%;
+}
+
+#faq li .answer p{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+}
+
+#faq li .answer{
+    display: none;
+}
+
+#faq li:hover .answer{
+    display: block;
+}
+
+
+
 
 /* debug */
 .debug header {
@@ -718,4 +811,8 @@ section.jumbotron .img-jumb img{
     background-color: skyblue;
     height: 50%;
     width: 50%;
+}
+
+.debug #faq .row{
+    background-color: red;
 }
