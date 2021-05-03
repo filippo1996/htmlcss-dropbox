@@ -490,6 +490,15 @@ section.jumbotron .img-jumb img{
     height: 50vh;
 }
 
+#partner-logos .container-section{
+    margin-bottom: 60px;
+}
+
+#partner-logos .title-h2{
+    width: 60%;
+    margin-bottom: 20px;
+}
+
 #partner-logos .row,
 #partner-logos .content{
     height: 100%;
@@ -545,9 +554,28 @@ section.jumbotron .img-jumb img{
 
 #partner-logos .col-center{
     background-color: #f5f5f5;
+    overflow: auto;
 }
 
+#partner-logos .col-center figure{
+    margin: 50px;
+}
 
+#partner-logos .col-center img{
+    max-width: 150px;
+    margin-bottom: 30px;
+}
+
+#partner-logos .col-center hr{
+    width: 40px;
+    border: none;
+    border-top: 1px solid gray;
+    margin-bottom: 30px;
+}
+
+#partner-logos .col-center p{
+    margin: 35px 0 30px;
+}
 
 /* debug */
 .debug header {
