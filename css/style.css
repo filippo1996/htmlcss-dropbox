@@ -777,20 +777,43 @@ footer .footer-bottom .name-language{
 }
 
 
+/* live chat */
+.live-chat{
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    background-color: #11277f;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+    padding: 10px;
+    box-shadow: 2px 2px 5px black;
+}
+
+.live-chat.fix{
+    position: fixed;
+    bottom: 20px;
+    right: 25px;
+    z-index: 9;
+}
+
+
+
+
 
 
 
 
 /* debug */
+/*
 .debug header {
     background-color: green;
 }
 
-/*
+
 .debug .row{
     background-color: red;
 }
-*/
+
 
 .debug .col-1{
     background-color: blue;
@@ -935,3 +958,4 @@ footer .footer-bottom .name-language{
 .debug footer .footer-top .col-2{
     background-color: pink;
 }
+*/
