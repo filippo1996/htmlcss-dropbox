@@ -168,6 +168,16 @@ body{
     transform: rotate(-45deg);
 }
 
+.ico-arrow-up{
+    display: inline-block;
+    width: 10px;
+    height: 7px;
+    background-image: url(../img/icons/icone.png);
+    background-size: auto 10500px;
+    background-position: left -8657px;
+    background-repeat: no-repeat;
+}
+
 .ico-check{
     display: inline-block;
     width: 13px;
@@ -667,6 +677,68 @@ section.jumbotron .img-jumb img{
     display: block;
 }
 
+/* footer */
+footer{
+    width: 100%;
+    background-color: #000;
+    padding: 150px 0;
+}
+
+footer h4{
+    color: white;
+    margin-bottom: 20px;
+}
+
+footer li{
+    margin-bottom: 15px;
+}
+
+footer li:hover{
+    text-decoration: underline;
+    color: white;
+}
+
+footer li a{
+    color: white;
+    text-decoration: none;
+    font-size: 13px;
+    line-height: 13px;
+}
+
+footer hr{
+    width: 50px;
+    border: none;
+    border-bottom: 1px solid white;
+    margin: 60px 0 30px;
+}
+
+footer .footer-bottom{
+    margin-bottom: 30px;
+}
+
+footer .footer-bottom .language{
+    display: inline-block;
+    border: 1px dotted rgb(102, 102, 102);
+}
+
+footer .footer-bottom .ico-world{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-image: url(../img/icons/icone.png);
+    background-position: left -7435px;
+    background-size: auto 10500px;
+    background-repeat: no-repeat;
+    vertical-align: text-bottom;
+}
+
+footer .footer-bottom .name-language{
+    color: rgb(102, 102, 102);
+    margin: 0 8px;
+}
+
+
+
 
 
 
@@ -815,4 +887,12 @@ section.jumbotron .img-jumb img{
 
 .debug #faq .row{
     background-color: red;
+}
+
+.debug footer .footer-top{
+    background-color: green;
+}
+
+.debug footer .footer-top .col-2{
+    background-color: pink;
 }
