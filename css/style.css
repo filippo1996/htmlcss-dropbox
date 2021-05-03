@@ -396,6 +396,45 @@ header ul.nav {
     line-height: 78px;
 }
 
+header ul.nav li{
+    position: relative;
+}
+
+header ul.nav .menu-dropdown{
+    position: absolute;
+    top: 80px;
+    right: -126px;
+    width: 240px;
+    background-color: #fafafa;
+}
+
+header ul.nav .menu-dropdown{
+    line-height: normal;
+    padding: 20px 0;
+}
+
+header ul.nav .menu-dropdown li{
+    padding: 10px 30px;
+    border: none;
+}
+
+header ul.nav .menu-dropdown li a{
+    text-decoration: none;
+    color: black;
+}
+
+header ul.nav .menu-dropdown li:hover{
+    background-color: #ebebeb;
+}
+
+header ul.nav .menu-dropdown{
+    display: none;
+}
+
+header ul.nav .nav-item:hover .menu-dropdown{
+    display: block;
+}
+
 header .nav-item{
     margin: 0 20px;
 }
@@ -706,7 +745,7 @@ footer li a{
 }
 
 footer hr{
-    width: 50px;
+    width: 110px;
     border: none;
     border-bottom: 1px solid white;
     margin: 60px 0 30px;
